@@ -1,0 +1,31 @@
+.footer{
+    background: #7BCABB;
+    color: #434c49;
+    height: 33vh
+}
+
+.height{
+    height: 30px
+}
+
+ul {
+    list-style-type: none;
+}
+
+a{
+    margin: 3px;
+}
+
+.social{
+    position: relative;
+    text-align: right;
+    right: 20px;
+    top: 15px;
+}
+
+.text{
+    position: relative;
+    text-align: right;
+    right: 20px;
+    top: 75px;
+}
