@@ -1,0 +1,179 @@
+<div class="content">
+  <!-- DeskTop Screen-->
+  <div fxLayout="row" fxLayoutAlign="start center" class="cover">
+    <div class="line" fxShow="false" fxShow.gt-sm></div>      
+    <div fxFlex="5%" fxShow="false" fxShow.gt-sm></div>
+    <div fxFlex class="jumbotron">
+      <div fxFlex>
+        <div class="jTitle">House Scan Service</div>
+        <div class="jContent">XAs locals, we check that the house or room that you chose is real & provide essential information about it.</div>
+        <button class="buttonD" mat-button fxShow="false" fxShow.gt-sm>Get in touch</button>
+        <button class="buttonM" mat-button fxHide="false" fxHide.gt-sm>Get in touch</button>          
+      </div>
+    </div>
+  </div>
+  <div fxLayout="column" >
+    <div fxFlex fxShow="false" fxShow.gt-sm>
+      <h1>How it works?</h1>
+      <p>House scanner is a service provided for the<br>
+        international students and new arrivals who intend to move to Stockholm<br>
+        but has no local friend who would make sure if the shosen room or apartment is real.<br>
+        Since it is compicated to come back and forwardto the city<br>
+        we are local friends who take all struggly away</p>
+    </div>
+    <div fxFlex fxShow="false" fxShow.gt-sm class="center">
+      
+        <i id="circle" class="fa fa-user"></i> 
+           <hr class="between">
+        <i id="circle" class="fa fa-home"  style="font-size: 110px; color: #7BCABB; background: transparent;"></i>
+          <hr class="between">
+          <i id="circle" class="fa fa-user"></i>
+      
+    </div>
+    <div FxFlex fxShow="false" fxShow.gt-sm>
+        <video controls width="630" height="460" poster="/assets/images/poster.png">
+          <source src="/assets/video/landing_video.mp4" type='video/mp4' />
+          <source src="/assets/video/landing_video.webm" type='video/webm' />
+        </video>
+    </div>
+    <div FxFlex fxShow="false" fxShow.gt-sm>
+      <h1>Our team</h1>
+      <p>Trustful people are going to check the house for you</p>
+      <div fxLayout="row"> 
+        <!-- item one photo -->
+        <div fxFlex="50%" class=" one"></div>
+        <div fxFlex >
+               <!-- item one Detail -->
+          <div class="box1">
+            <div class="boxDetail">
+              <h2>Jim Smith</h2>
+              <h3>Stockholm</h3>
+            </div>  
+          </div>
+                <!-- item two Detail -->
+          <div class="box2">
+            <div class="boxDetailX">
+              <h2>Maria Bolin</h2>
+              <h3>Stockholm</h3>
+            </div>
+          </div>
+        </div>
+                <!-- item two photo -->
+        <div fxFlex="25%" class=" two"></div>
+      </div>
+      <div fxLayout="row" > 
+        <!-- item three photo -->
+        <div fxFlex="25%" class=" three"></div>
+        <!-- item three Detail -->
+        <div fxFlex="25%" >
+          <div class="box3">
+            <div class="boxDetailXX">
+              <h2>Fredrik Larsson</h2>
+              <h3>Stockholm</h3>
+            </div>  
+          </div>
+        </div>
+        <!-- item four photo -->
+        <div fxFlex="25%" class=" four"></div>
+        <!-- item four Detail -->
+        <div fxFlex="25%" >
+          <div class="box4">
+            <div class="boxDetailXX">
+              <h2>Oskar Lundh</h2>
+              <h3>Stockholm</h3>
+            </div>  
+          </div>
+        </div>
+      </div>
+    </div>
+    <div fxLayout fxShow="false" fxShow.gt-sm class="cardS">
+      <div fxFlex="35%">
+        <div class="line1"></div>
+        <div class="text">
+            &nbsp;&nbsp;&quot;<br>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;I'm 100% <br>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;satisfied with<br> 
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;this service<br>
+          <span style="text-align:right;display:block">&quot;</span>
+        </div>
+        <p style="text-align:left">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Anna,<br>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;KTH student, Stockholm</p>                       
+      </div>
+      <div fxFlex="65%" class="review">
+          <div fxFlex=35%><img class="reviewI" src="/assets/images/review.jpg" alt=""></div>
+          <div fxFlex=60%><p style="padding:90px 10px 0px 80px;text-align:left" >Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including...</p></div>
+          <div fxFlex="5%"></div>                              
+      </div>
+    </div>
+    <!-- Mobile Screen-->
+    <div FxFlex fxHide="false" fxHide.gt-sm class="mVideo">
+        <h1>How it works?</h1>
+        <p style="color:white">House scanner is a service provided for the<br>
+          international students and new arrivals who intend to move to Stockholm</p>
+        <h1 id={{show}}><button mat-icon-button (click)="convert()"><mat-icon>play_circle_filled</mat-icon></button></h1>
+        <video id={{hide}} controls width="320" height="210" poster="/assets/images/poster.png">
+          <source src="/assets/video/landing_video.mp4" type='video/mp4' />
+          <source src="/assets/video/landing_video.webm" type='video/webm' />
+        </video>
+    </div>
+    <div fxLayout="column" fxHide="false" fxHide.gt-sm>
+      <div fxFlex>
+        <h1>Our team</h1>
+        <p>Trustful people are going to check the house for you</p>
+      </div>
+      <!-- Item one -->
+      <div fxFlex>
+        <div  class="one"></div>
+      </div>
+      <div fxFlex>
+        <div class="boxM">
+          <div class="boxDetail">
+            <h2>Jim Smith</h2>
+            <h3>Stockholm</h3>
+            </div>  
+        </div>
+      </div>
+      <!-- Item tow -->
+      <div fxFlex>
+        <div  class="two"></div>
+      </div>
+      <div fxFlex>
+        <div class="boxM">
+          <div class="boxDetail">
+            <h2>Maria Bolin</h2>
+            <h3>Stockholm</h3>
+          </div>  
+        </div>
+      </div>
+      <div fxFlex>
+        <div class="textM">
+            &nbsp;&nbsp;&quot;<br>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;I'm 100% <br>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;satisfied with<br> 
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;this service<br>
+          <span style="text-align:right;display:block">&quot;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+        </div>
+        <p style="text-align:left">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Anna,<br>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;KTH student, Stockholm</p>                       
+      </div>
+      <div fxFlex>
+        <img class="center" src="/assets/images/review.jpg" alt="">
+      </div>
+      <div fxFlex>
+          <p class="review" style="padding:10px" >Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including...</p>
+      </div>
+    </div>
+    <div FxFlex >
+      <h1 >Do you need more information?</h1>
+      <button class="buttonC" mat-button>Contact Us</button>
+    </div>
+    <div fxLayout>
+
+      <img width='100' class="center" src="/assets/images/logo.svg" alt="">
+      
+      <div fxFlex="65%"> <h3 style="color:#7BCABB">This service is made by Globuzzer </h3></div>
+    </div>
+  </div>
+</div>
+
+  

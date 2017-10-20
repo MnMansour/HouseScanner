@@ -1,0 +1,227 @@
+.cover{
+    background: #7BCABB;
+}
+
+.jumbotron{
+    background-image: url("/assets/images/jumbotron.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-size: 1.5rem; 
+}
+
+.jTitle{
+    color: #7BCABB;
+    font-size: 4rem;
+    letter-spacing: 5px;
+    width: 50%;
+    margin: 15% 20px 10px 40px;
+}
+
+.jContent{
+    color: white;
+    margin: 10px 40px;
+    width: 60%;    
+}
+
+.buttonD{
+    background: #7BCABB;
+    border-radius: 18px;
+    margin: 10px 20px 15% 40px;
+    padding: 3px 30px;
+    color: white;
+    font-weight: 700;
+    font-size: 1rem;
+    z-index: 0;
+}
+.buttonM{
+    background: #7BCABB;
+    width: 100%;
+    padding: 3px;
+    color: white;
+    font-weight: 700;
+    font-size: 1rem;
+    margin: 15% 0px 0px 0px;
+}
+
+.line{
+    width: 200px ;
+    height: 10px ;
+    background-color: #a0a0a0;
+    position: absolute;
+    top: 190px;
+    z-index: 1  
+}
+
+.line1{
+    width: 280px ;
+    height: 35px ;
+    background-color: #a0a0a0;  
+}
+
+h1{
+    color: #7BCABB;
+    font-size: 4rem;
+    margin: 15% 0px 25px 0px; 
+    text-align: center;
+    
+}
+p{
+    text-align: center;
+    font-size: 1.15rem;
+    margin: 10px 10px 50px 10px
+}
+
+#circle {
+    width: 135px;
+    height: 135px;
+    background: #7BCABB;
+    border: 2px solid #808080;
+    border-radius: 50%;
+    margin: 10px auto;
+    padding: 10px;
+  }
+
+  .between{
+    display: inline-block;
+    border-top: 2px solid #D4CDC3;
+    width: 50px;
+  }
+
+  i{
+    font-size: 110px;
+     color: #fff;
+     text-align: center;
+     letter-spacing: 5px;     
+  }
+
+ .mVideo{
+    background-image: url("/assets/images/videoback.jpg");
+    background-repeat: no-repeat;
+    background-size: cover
+ }
+
+ video{
+    display: block;
+    margin: 0 auto;
+    border: 12px solid #eee
+ }
+
+ #show{
+     display: block
+ }
+
+ #hide{
+    display: none
+}
+
+.one {
+    height: 60vh;
+    background: url("/assets/images/item1.jpg") no-repeat 50% 50%;
+    background-size: cover;
+}
+.two {
+    height: 60vh;
+    background: url("/assets/images/item2.jpeg") no-repeat 50% 50%;
+    background-size: cover;
+}
+
+.three {
+    height: 40vh;
+    background: url("/assets/images/item1.jpg") no-repeat 50% 50%;
+    background-size: cover;
+}
+.four {
+    height: 40vh;
+    background: url("/assets/images/item2.jpeg") no-repeat 50% 50%;
+    background-size: cover;
+}
+
+.box1{
+    height:30vh;
+    background: #84ccc9
+}
+
+.box2{
+    height:30vh;
+    background: #565a5b
+}
+
+.box3{
+    height:40vh;
+    background: #565a5b
+}
+.box4{
+    height:40vh;
+    background: #84ccc9
+}
+
+
+
+.boxDetail{
+    position: relative;
+    color: white;
+    padding: 10px 20px
+}
+
+.boxDetailX{
+    position: relative;
+    color: white;
+    padding: 65px 0px 0px 150px
+}
+
+.boxDetailXX{
+    position: relative;
+    color: white;
+    padding: 100px 0px 0px 10px
+}
+
+.center{
+    display: block;
+    margin: 0 auto
+}
+
+.cardS{
+    padding: 10% 0;
+}
+
+.text{
+    color: #7BCABB;
+    font-size: 3.1rem;
+    z-index: 2;
+    position: relative;
+    bottom: 15px;
+    left: 15px
+}
+
+.review{
+    background: #DFE2DB;
+    position: relative;
+    top: 50px
+}
+.reviewI{
+    display:block;
+    z-index:1;
+    position: relative
+}
+
+.buttonC{
+    background: #7BCABB;
+    border-radius: 18px;
+    display: block;
+    margin: 30px auto;
+    padding: 3px 30px;
+    color: white;
+    font-weight: 700;
+    font-size: 1rem;
+    z-index: 0;
+}
+
+.boxM{
+    height:20vh;
+    background: #565a5b
+}
+
+.textM{
+    color: #7BCABB;
+    font-size: 3.1rem    
+}

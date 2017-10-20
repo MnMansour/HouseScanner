@@ -1,0 +1,21 @@
+<div class="fixedbar">
+  <mat-toolbar class="header">
+    <span class="flex-spacer"></span>      
+    <div fxLayout="row" fxShow="false" fxShow.gt-sm>     
+      <span class="flex-spacer"></span>
+      <a mat-button href="#"><span class="fa fa-home fa-lg"></span> HOME</a>
+      <a mat-button href="#"><span class="fa fa-info fa-lg"></span> ABOUT</a>
+      <a mat-button href="#"><span class="fa fa-address-card fa-lg"></span> CONTACT</a>
+      <a mat-button href="#"><span class="fa fa-sign-in fa-lg"></span> SIGN IN</a>
+    </div>
+    <button mat-button [matMenuTriggerFor]="menu" fxHide="false" fxHide.gt-sm>
+      <mat-icon>menu</mat-icon>
+    </button>
+  </mat-toolbar>
+  <mat-menu x-position="before" #menu="matMenu">
+      <a mat-menu-item href="#"><span class="fa fa-home fa-lg"></span> HOME</a>
+      <a mat-menu-item href="#"><span class="fa fa-info fa-lg"></span> ABOUT</a>
+      <a mat-menu-item href="#"><span class="fa fa-address-card fa-lg"></span> CONTACT</a>
+      <a mat-menu-item href="#"><span class="fa fa-sign-in fa-lg"></span> SIGN IN</a>
+  </mat-menu>
+</div>

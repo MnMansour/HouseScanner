@@ -1,0 +1,14 @@
+.fixedbar{
+position: fixed;
+width: 100%;
+z-index: 10
+
+}
+
+.header{
+    background: #7BCABB;
+    color: white;
+}
+a{
+    margin: 6px
+}
