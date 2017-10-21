@@ -2,7 +2,7 @@
 @import '~@angular/material/prebuilt-themes/deeppurple-amber.css';
 
 
-body { 
+  body { 
     padding: 0; 
     margin: 0; 
     font-family: sans-serif;
@@ -19,5 +19,46 @@ body {
   }
 
   .content{
-    padding: 50px 0px 
+    padding: 50px 0px 0px 0px
   }
+
+  .cover{
+    background: #7BCABB;
+  }
+  .jumbotron{
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-size: 1.5rem; 
+}
+
+.shadow{
+  height: 100% ;
+  background: rgba(0, 0, 0, 0.51)
+}
+
+.jTitle{
+  color: #7BCABB;
+  font-size: 4rem;
+  letter-spacing: 5px;
+  width: 50%;
+  margin: 15% 20px 10px 40px;
+}
+
+.jContent{
+  color: white;
+  margin: 10px 40px;
+  width: 60%;    
+}
+
+.line{
+  width: 200px ;
+  height: 10px ;
+  background-color: #a0a0a0;
+  position: absolute;
+  top: 190px;
+  z-index: 1  
+}
+
+.marginB{
+  margin: 100px 0px 0px 0px
+}

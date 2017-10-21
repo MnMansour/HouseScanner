@@ -4,11 +4,13 @@
     <div class="line" fxShow="false" fxShow.gt-sm></div>      
     <div fxFlex="5%" fxShow="false" fxShow.gt-sm></div>
     <div fxFlex class="jumbotron">
-      <div fxFlex>
-        <div class="jTitle">House Scan Service</div>
-        <div class="jContent">XAs locals, we check that the house or room that you chose is real & provide essential information about it.</div>
-        <button class="buttonD" mat-button fxShow="false" fxShow.gt-sm>Get in touch</button>
-        <button class="buttonM" mat-button fxHide="false" fxHide.gt-sm>Get in touch</button>          
+      <div class="shadow">
+        <div fxFlex>
+          <div class="jTitle">House Scan Service</div>
+          <div class="jContent">XAs locals, we check that the house or room that you chose is real & provide essential information about it.</div>
+          <button class="buttonD" mat-button fxShow="false" fxShow.gt-sm>Get in touch</button>
+          <button class="buttonM" mat-button fxHide="false" fxHide.gt-sm>Get in touch</button>          
+        </div>
       </div>
     </div>
   </div>
@@ -90,11 +92,11 @@
       <div fxFlex="35%">
         <div class="line1"></div>
         <div class="text">
-            &nbsp;&nbsp;&quot;<br>
+            &nbsp;&nbsp;<i style="color:#7BCABB;font-size:1.7rem"class="fa fa-quote-left" aria-hidden="true"></i><br>
           &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;I'm 100% <br>
           &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;satisfied with<br> 
           &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;this service<br>
-          <span style="text-align:right;display:block">&quot;</span>
+          <span style="text-align:right;display:block"><i style="color:#7BCABB;font-size:1.7rem"class="fa fa-quote-right" aria-hidden="true"></i></span>
         </div>
         <p style="text-align:left">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Anna,<br>
           &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;KTH student, Stockholm</p>                       
@@ -110,7 +112,7 @@
         <h1>How it works?</h1>
         <p style="color:white">House scanner is a service provided for the<br>
           international students and new arrivals who intend to move to Stockholm</p>
-        <h1 id={{show}}><button mat-icon-button (click)="convert()"><mat-icon>play_circle_filled</mat-icon></button></h1>
+        <h1 id={{show}} ><button mat-icon-button (click)="convert()"><mat-icon style="font-size:50px">play_circle_filled</mat-icon></button></h1>
         <video id={{hide}} controls width="320" height="210" poster="/assets/images/poster.png">
           <source src="/assets/video/landing_video.mp4" type='video/mp4' />
           <source src="/assets/video/landing_video.webm" type='video/webm' />
@@ -147,7 +149,7 @@
       </div>
       <div fxFlex>
         <div class="textM">
-            &nbsp;&nbsp;&quot;<br>
+            &nbsp;&nbsp;<i class="fa fa-quote-left"></i><br>
           &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;I'm 100% <br>
           &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;satisfied with<br> 
           &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;this service<br>
@@ -164,13 +166,11 @@
       </div>
     </div>
     <div FxFlex >
-      <h1 >Do you need more information?</h1>
+      <h1 style="font-size:3rem">Do you need more information?</h1>
       <button class="buttonC" mat-button>Contact Us</button>
     </div>
-    <div fxLayout>
-
+    <div fxLayout class="marginB">
       <img width='100' class="center" src="/assets/images/logo.svg" alt="">
-      
       <div fxFlex="65%"> <h3 style="color:#7BCABB">This service is made by Globuzzer </h3></div>
     </div>
   </div>

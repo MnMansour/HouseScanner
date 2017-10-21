@@ -1,0 +1,162 @@
+.jumbotron{
+  background-image: url("/assets/images/about.jpeg");
+  background-position: center center;
+  
+}
+
+.margin{
+  margin: 100px 0px
+}
+
+.buttonD{
+    background: #7BCABB;
+    border-radius: 18px;
+    margin: 10px 20px 15% 40px;
+    padding: 3px 30px;
+    color: white;
+    font-weight: 700;
+    font-size: 1rem;
+    z-index: 0;
+  }
+  .buttonM{
+    background: #7BCABB;
+    width: 100%;
+    padding: 3px;
+    color: white;
+    font-weight: 700;
+    font-size: 1rem;
+    margin: 15% 0px 0px 0px;
+  }
+
+  .jContentM{
+    color: white;
+    margin: 10px 20px;
+    width: 90%;
+    font-size: 1.32rem 
+  }
+
+  .steps{
+    margin: 70px 20px;
+
+  }
+
+  .centerX{
+    text-align: center; 
+    color:  #7BCABB;
+    font-size: 1.7rem;
+    height: 100%;
+  }
+  
+  .middleX{
+    height: 20%;
+  }
+
+  .description{
+    height: 33.3%;
+    color: #7BCABB
+  }
+
+  h1{
+    font-size: 2.5rem;
+    color:  #7BCABB;
+  }
+
+  p{
+    font-size: 1.4rem;
+    color: black
+  }
+
+  .middle{
+    height: 40vh;
+    background:  url("/assets/images/business.jpeg") no-repeat 50% 50%;
+    background-size: cover;
+  }
+
+  .textPhoto{
+    position: relative;
+    top: 45%;
+    text-align: center;
+    color: white;
+    font-size: 1.7rem;
+  }
+
+  .circle{
+    background: white;
+    margin: 10px auto;
+    height: 140px;
+    width: 140px;
+    border-radius: 50%
+  }
+
+  .boxes{
+    text-align:center;
+    padding:20px
+  }
+  
+  .box{
+    background: #7c7c7c;
+    width:80%
+  }
+
+  .boxX{
+    background: #84ccc9; 
+    width:80%
+  }
+  
+  .tBox{
+    color: white;
+    width: 90%;
+    margin: 0 auto
+  }
+
+  .lineR{
+    width: 50%;
+    height: 18px;
+    background: #a0a0a0;
+    margin: 30px 0px 70px 0px
+  }
+
+  .textM{
+    margin:0 auto;
+    width:80%; 
+    background:rgba(223, 226, 219, 0.66);
+    padding:10px 
+  }
+
+  .textD{
+    padding:20px 0px 0px 10%;
+    width:60%
+  }
+
+  .shadowP{
+    height:72%;
+    width:110%;
+    background:rgba(223, 226, 219, 0.66);
+    position:relative;
+    left:95%;
+    bottom:62%
+  }
+
+  .meeting{
+    height: 50vh;
+    background:  url("/assets/images/meeting.jpg") no-repeat 50% 50%;
+    background-size: cover;
+  }
+
+  .center{
+    display: block;
+    margin: 0 auto
+  }
+
+.buttonG{
+  color: white;
+  background: #7BCABB;
+  font-size: 1.9rem;
+  padding: 10px;
+  margin: 0 auto;
+  width: auto;
+  display: block;
+  border-radius: 25px;
+  top: 40%;
+}
+
