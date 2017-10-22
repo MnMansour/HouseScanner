@@ -1,3 +1,38 @@
-<p>
-  contact works!
-</p>
+<div class="content">
+  <div fxLayout="column">
+    <div fxFlex>
+      <h1 class="title">Contact us</h1>
+    </div>
+    <form fxFlex>
+      <p>
+        <mat-form-field class="half-width">
+          <input type="text" matInput placeholder="First Name">
+        </mat-form-field>
+        <mat-form-field class="half-width">
+          <input type="text" matInput placeholder="Last Name">
+        </mat-form-field>
+      </p>
+      <p>
+        <mat-form-field class="full-width">
+          <input type="email" matInput placeholder="Your Email">
+        </mat-form-field>
+      </p>
+      <p>
+        <mat-form-field class="full-width">
+          <textarea  matInput placeholder="Type Your Message Here" rows=6></textarea>
+        </mat-form-field>
+      </p>
+      <button class="send" mat-button>Send</button>
+      </form>
+    <div fxFill >
+      <div class="map">
+        <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2033.9904944044308!2d18.068475916073133!3d59.34980648166603!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x465f779d96ed48cb%3A0xb1366ae00b879b4a!2sKungliga+Tekniska+H%C3%B6gskolan!5e0!3m2!1sen!2sfi!4v1502953690576" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+      </div>
+    </div>
+  </div>
+
+  <div fxLayout class="marginB">
+    <img width='100' class="center" src="/assets/images/logo.svg" alt="">
+    <div fxFlex="65%"> <h3 style="color:#7BCABB">This service is made by Globuzzer </h3></div>
+  </div>
+</div>

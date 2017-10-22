@@ -5,6 +5,7 @@ import { NgModule } from '@angular/core';import { MatButtonModule, MatCheckboxMo
   MatSlideToggleModule, MatToolbarModule, MatListModule, MatGridListModule,
   MatCardModule, MatIconModule, MatProgressSpinnerModule, MatDialogModule,MatMenuModule,MatChipsModule} from '@angular/material';
 import { FlexLayoutModule } from '@angular/flex-layout';
+import { AppRoutingModule } from './app-routing/app-routing.module';
 import 'hammerjs';
   
 import { AppComponent } from './app.component';
@@ -30,7 +31,7 @@ import { ContactComponent } from './contact/contact.component';
     MatInputModule, MatRadioModule, MatSelectModule, MatSliderModule,
     MatSlideToggleModule, MatToolbarModule, MatListModule, MatGridListModule,
     MatCardModule, MatIconModule, MatProgressSpinnerModule, MatDialogModule,MatMenuModule,MatChipsModule,
-    FlexLayoutModule,
+    FlexLayoutModule,AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -3,19 +3,19 @@
     <span class="flex-spacer"></span>      
     <div fxLayout="row" fxShow="false" fxShow.gt-sm>     
       <span class="flex-spacer"></span>
-      <a mat-button href="#">HOME</a>
-      <a mat-button href="#">ABOUT</a>
-      <a mat-button href="#">CONTACT</a>
-      <a mat-button href="#">SIGN IN</a>
+      <a mat-button routerLink="/home">HOME</a>
+      <a mat-button routerLink="/about">ABOUT</a>
+      <a mat-button routerLink="/contact">CONTACT</a>
+      <a mat-button >SIGN IN</a>
     </div>
     <button mat-button [matMenuTriggerFor]="menu" fxHide="false" fxHide.gt-sm>
       <mat-icon>menu</mat-icon>
     </button>
   </mat-toolbar>
   <mat-menu x-position="before" #menu="matMenu">
-      <a mat-menu-item href="#">HOME</a>
-      <a mat-menu-item href="#">ABOUT</a>
-      <a mat-menu-item href="#">CONTACT</a>
-      <a mat-menu-item href="#">SIGN IN</a>
+    <a mat-button routerLink="/home">HOME</a>
+    <a mat-button routerLink="/about">ABOUT</a>
+    <a mat-button routerLink="/contact">CONTACT</a>
+    <a mat-menu-item>SIGN IN</a>
   </mat-menu>
 </div>
