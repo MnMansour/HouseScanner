@@ -11,7 +11,9 @@
   }
 
   form{
-      padding: 3px 15% 15% 15%
+      padding: 3px 15% 15% 15%;
+      color: #7BCABB;
+      font-size: 1.1rem
   }
   .center{
     display: block;
@@ -37,6 +39,16 @@
     border-radius: 25px;
 }
 
-:host /deep/ .mat-input-placeholder-wrapper {
-    background-color: #eee;
+:host /deep/ .mat-input-placeholder {
+    color: #7BCABB;
+    font-size: 1.2rem;    
+}
+
+:host  /deep/ .mat-input-underline{
+    background: #7BCABB
+}
+
+:host input:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0 30px #fff inset;
+    -webkit-text-fill-color: #7BCABB !important;
 }

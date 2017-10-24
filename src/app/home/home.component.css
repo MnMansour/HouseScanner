@@ -126,7 +126,10 @@ p{
     background: #84ccc9
 }
 
-
+.textpadding{
+    padding: 3px 55px;
+    text-align: left
+}
 
 .boxDetail{
     position: relative;
