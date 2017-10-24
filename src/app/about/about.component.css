@@ -123,9 +123,16 @@
     padding:10px 
   }
 
+  .titleD{
+    z-index: 2;
+    position:relative;
+  }
+
   .textD{
     padding:20px 0px 0px 10%;
-    width:60%
+    width:60%;
+    z-index: 2;
+    position:relative;
   }
 
   .shadowP{
@@ -134,7 +141,8 @@
     background:rgba(223, 226, 219, 0.66);
     position:relative;
     left:95%;
-    bottom:62%
+    bottom:62%;
+    z-index: 1;
   }
 
   .meeting{

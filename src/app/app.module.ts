@@ -14,6 +14,9 @@ import { HomeComponent } from './home/home.component';
 import { FooterComponent } from './footer/footer.component';
 import { AboutComponent } from './about/about.component';
 import { ContactComponent } from './contact/contact.component';
+import { SigninComponent } from './signin/signin.component';
+import { SigninmobileComponent } from './signinmobile/signinmobile.component';
+import { SignupmobileComponent } from './signupmobile/signupmobile.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +25,10 @@ import { ContactComponent } from './contact/contact.component';
     HomeComponent,
     FooterComponent,
     AboutComponent,
-    ContactComponent
+    ContactComponent,
+    SigninComponent,
+    SigninmobileComponent,
+    SignupmobileComponent,
   ],
   imports: [
     BrowserModule,
@@ -34,6 +40,11 @@ import { ContactComponent } from './contact/contact.component';
     FlexLayoutModule,AppRoutingModule
   ],
   providers: [],
+  entryComponents:[
+    SigninComponent,
+    SigninmobileComponent,
+    SignupmobileComponent],
   bootstrap: [AppComponent]
+  
 })
 export class AppModule { }

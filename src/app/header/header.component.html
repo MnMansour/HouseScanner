@@ -3,19 +3,20 @@
     <span class="flex-spacer"></span>      
     <div fxLayout="row" fxShow="false" fxShow.gt-sm>     
       <span class="flex-spacer"></span>
-      <a mat-button routerLink="/home">HOME</a>
-      <a mat-button routerLink="/about">ABOUT</a>
-      <a mat-button routerLink="/contact">CONTACT</a>
-      <a mat-button >SIGN IN</a>
+      <a mat-button routerLink="/home" routerLinkActive="active">HOME</a>
+      <a mat-button routerLink="/about" routerLinkActive="active">ABOUT</a>
+      <a mat-button routerLink="/contact" routerLinkActive="active">CONTACT</a>
+      <a mat-button (click)="openSign()">SIGN IN\UP</a>
     </div>
     <button mat-button [matMenuTriggerFor]="menu" fxHide="false" fxHide.gt-sm>
       <mat-icon>menu</mat-icon>
     </button>
   </mat-toolbar>
-  <mat-menu x-position="before" #menu="matMenu">
-    <a mat-button routerLink="/home">HOME</a>
-    <a mat-button routerLink="/about">ABOUT</a>
-    <a mat-button routerLink="/contact">CONTACT</a>
-    <a mat-menu-item>SIGN IN</a>
+  <mat-menu  yPosition="below" #menu="matMenu" [overlapTrigger]="false" >
+    <button  mat-menu-item routerLink="/home">HOME</button>
+    <button  mat-menu-item routerLink="/about">ABOUT</button>
+    <button  mat-menu-item routerLink="/contact">CONTACT</button>
+    <button  mat-menu-item (click)="openSign()">SIGN IN</button>
+    <button  mat-menu-item (click)="openSignUp()">SIGN UP</button>
   </mat-menu>
 </div>

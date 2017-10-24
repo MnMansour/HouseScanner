@@ -1,0 +1,54 @@
+  <div fxLayout="row" fxLayoutAlign="none">
+    <div class="buttonX" fxShow="false" fxShow.gt-sm>
+        <button mat-button mat-dialog-close>&times;</button>
+    </div>
+    
+    <div fxFlex class="signin">
+      <h1 class="titleSI">Have you registered?</h1>
+      <form class="formS">
+        <p>
+          <mat-form-field class="full-width">
+            <input type="email" matInput placeholder="E-mail">
+          </mat-form-field>
+        </p>
+        <p>
+          <mat-form-field class="full-width">
+            <input type="password" matInput placeholder="Password">
+          </mat-form-field>
+        </p>
+        <a class="f" href=""> Forgot password?</a>
+        <p>
+          <button class="signinB" mat-button>Sign in</button><br>
+          <button fxHide="false"  fxHide.gt-sm class="signinB" mat-dialog-close mat-button>close</button>
+        </p>
+        
+      </form>
+    </div>
+    <div fxFlex="60%" fxShow="false" fxShow.gt-sm class="signup">
+      <h1 class="titleSU">Not a<br> member?</h1>
+      <form class="formS">
+        <p>
+          <mat-form-field class="half-width">
+            <input type="email" matInput placeholder="E-mail">
+          </mat-form-field>
+          <mat-form-field class="half-widthX">
+            <input type="text" matInput placeholder="First Name">
+          </mat-form-field>
+        </p>
+        <p>
+          <mat-form-field class="half-width">
+            <input type="password" matInput placeholder="Password" class='myclas'>
+          </mat-form-field>
+          <mat-form-field class="half-widthX">
+            <input type="text" matInput placeholder="Sure Name">
+          </mat-form-field>
+        </p>
+        <p style="text-align:right">
+          <button class="signupB" mat-button>Sign up</button>
+          <button class="signupF" mat-button>Login in with &nbsp;&nbsp;<i class="fa fa-facebook-square" aria-hidden="true"></i></button>
+          <button class="signupG" mat-button>Login in with &nbsp;&nbsp;<i class="fa fa-google-plus-square" aria-hidden="true"></i></button>
+        </p>
+        
+      </form>
+    </div>
+  </div>

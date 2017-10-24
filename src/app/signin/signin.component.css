@@ -1,0 +1,133 @@
+.signin{
+    background: #7BCABB;
+    padding: 12px 0px 0px 5%;
+    color: white
+}
+
+.signup{
+    padding: 12px 10px 0px 5%;
+    color: #7BCABB
+}
+.buttonX{
+    position:absolute;
+    right:10%;
+    top:7.2%;
+    background:#7BCABB;
+    color:white
+}
+
+
+.titleS{
+    color: #fff;
+    font-size: 2rem;
+    letter-spacing: 3px;
+}
+
+
+.f:visited, .f:link{
+    color: white;
+    text-decoration: none;
+}
+
+.f:hover {
+    color: white;
+    text-decoration: underline;
+}
+
+.signinB{
+    color: white;
+    font-size: 1.7rem;
+    padding: 10px;
+    margin: 0 auto;
+    width: 150px;
+    display: block;
+    border-radius: 25px;
+    border: 2px solid white
+}
+
+.signupB{
+    color: white;
+    background: #7BCABB;
+    font-size: 1.7rem;
+    padding: 10px;
+    width: 55%;
+    border-radius: 25px;
+    border: 2px solid white
+}
+
+.signupF{
+    color: #45609b;
+    font-size: 1.6rem;
+    width: 55%;
+    border-radius: 25px;
+    border: 2px solid #45609b;
+    margin: 5px 0px 4px 0px;
+}
+
+.signupG{
+    color: #df2e2f;
+    font-size: 1.6rem;
+    width: 55%;
+    border-radius: 25px;
+    border: 2px solid #df2e2f;
+    margin: 5px 0px 4px 0px;
+}
+
+.half-width{
+    width: 45%
+}
+
+.half-widthX{
+    width: 45%;
+    margin: 0px 0px 0px 5%
+}
+
+.full-width{
+   width: 90%
+}
+
+/* place holder */
+:host .signin /deep/ .mat-input-placeholder {
+    color: #fff;
+    font-size: 1.2rem;
+}
+
+:host .signup /deep/ .mat-input-placeholder {
+    color: #7BCABB;
+    font-size: 1.2rem;
+}
+
+/*Under Line active
+
+/deep/ .mat-input-ripple{
+
+} 
+
+*/
+
+/*Under Line normal*/
+:host .signin /deep/ .mat-input-underline{
+    background: #fff
+}
+
+:host .signup /deep/ .mat-input-underline{
+    background: #7BCABB
+}
+
+
+/* Backgroun & color of autofill */
+
+:host .signin input:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0 30px #7BCABB inset;
+    -webkit-text-fill-color: rgb(255, 255, 255) !important;
+}
+
+:host .signup input:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0 30px #fff inset;
+    -webkit-text-fill-color: #7BCABB !important;
+}
+
+/* full in dialog */
+/deep/ .mat-dialog-container{
+    padding: 0px 0px
+}
