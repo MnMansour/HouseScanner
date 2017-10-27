@@ -6,6 +6,7 @@ import { NgModule } from '@angular/core';import { MatButtonModule, MatCheckboxMo
   MatCardModule, MatIconModule, MatProgressSpinnerModule, MatDialogModule,MatMenuModule,MatChipsModule} from '@angular/material';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { AppRoutingModule } from './app-routing/app-routing.module';
+import { FormsModule } from '@angular/forms'; 
 import 'hammerjs';
   
 import { AppComponent } from './app.component';
@@ -17,6 +18,7 @@ import { ContactComponent } from './contact/contact.component';
 import { SigninComponent } from './signin/signin.component';
 import { SigninmobileComponent } from './signinmobile/signinmobile.component';
 import { SignupmobileComponent } from './signupmobile/signupmobile.component';
+
 
 @NgModule({
   declarations: [
@@ -37,7 +39,7 @@ import { SignupmobileComponent } from './signupmobile/signupmobile.component';
     MatInputModule, MatRadioModule, MatSelectModule, MatSliderModule,
     MatSlideToggleModule, MatToolbarModule, MatListModule, MatGridListModule,
     MatCardModule, MatIconModule, MatProgressSpinnerModule, MatDialogModule,MatMenuModule,MatChipsModule,
-    FlexLayoutModule,AppRoutingModule
+    FlexLayoutModule,AppRoutingModule,FormsModule
   ],
   providers: [],
   entryComponents:[

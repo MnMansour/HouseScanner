@@ -2,27 +2,47 @@
   <div fxLayout="column">
     <div fxFlex>
       <h1 class="title">Contact us</h1>
-    </div>
-    <form fxFlex>
+    </div>     
+    <form fxFlex novalidate (ngSubmit)="onSubmit()" #contactForm="ngForm">
       <p>
-        <mat-form-field class="half-width">
-          <input type="text" matInput placeholder="First Name">
+        <mat-form-field class="half-width" dividerColor="{{FirstName.invalid && !FirstName.pristine? 'warn' : 'primary'}}">
+          <input type="text" matInput placeholder="First Name" name="FirstName" #FirstName="ngModel" [(ngModel)]="user.FisrtName" required>
+          <mat-hint>
+            <span [hidden]="FirstName.pristine">
+              <span [hidden]="!FirstName.errors?.required"> First Name is required</span>
+            </span>
+          </mat-hint>
         </mat-form-field>
-        <mat-form-field class="half-width">
-          <input type="text" matInput placeholder="Last Name">
+        <mat-form-field class="half-width" dividerColor="{{LastName.invalid && !LastName.pristine? 'warn' : 'primary'}}">
+          <input type="text" matInput placeholder="Last Name" name="LastName" #LastName="ngModel" [(ngModel)]="user.LastName" required>
+          <mat-hint>
+            <span [hidden]="LastName.pristine">
+            <span [hidden]="!LastName.errors?.required">Last Name is required</span>
+            </span>
+          </mat-hint>
         </mat-form-field>
       </p>
       <p>
-        <mat-form-field class="full-width">
-          <input type="email" matInput placeholder="Your Email">
+        <mat-form-field class="full-width" dividerColor="{{Email.invalid && !Email.pristine? 'warn' : 'primary'}}">
+          <input type="email" matInput placeholder="Your Email" name="Email"  #Email="ngModel" [(ngModel)]="user.Email" required>
+          <mat-hint>
+            <span [hidden]="Email.pristine">
+            <span [hidden]="!Email.errors?.required">Email is required</span>
+            </span>
+          </mat-hint>
         </mat-form-field>
       </p>
       <p>
-        <mat-form-field class="full-width">
-          <textarea  matInput placeholder="Type Your Message Here" rows=6></textarea>
+        <mat-form-field class="full-width" dividerColor="{{message.invalid && !message.pristine? 'warn' : 'primary'}}">
+          <textarea  matInput placeholder="Type Your Message Here" name="message" #message="ngModel" [(ngModel)]="user.message" rows=6 required></textarea>
+          <mat-hint>
+            <span [hidden]="message.pristine">
+            <span [hidden]="!message.errors?.required">Message is required</span>
+            </span>
+          </mat-hint>
         </mat-form-field>
       </p>
-      <button class="send" mat-button>Send</button>
+      <button type="submit" class="send" [disabled]="contactForm.form.invalid" mat-button>Send</button>
       </form>
     <div fxFill >
       <div class="map">
